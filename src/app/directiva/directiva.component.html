@@ -1,0 +1,21 @@
+<button type="button" (click)="setHabilitar()" class="btn btn-primary  my-3">
+{{habilitar==true? 'ocutlar':'mostrar' }}
+</button>
+<div class="card">
+ 
+  <div class="card-header" >
+    Preguntas más frecuentes 
+  </div>
+  <ul class ="list-group" *ngIf="habilitar ">
+    <li  class ="list-group-item" *ngFor="let curso of listaPreguntas">{{curso}}</li>
+  </ul>
+</div>
+<div class="card">
+
+   
+  <div class="card-header" >
+      Mas informacion consultar a la pagina: <a href="https://www.digitaljaguar.com.mx/">visite:https://www.digitaljaguar.com.mx/ </a> 
+
+     
+  </div>
+</div>
